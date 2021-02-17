@@ -51,8 +51,11 @@ public class App {
     
     
       Scanner scanner = new Scanner(System.in); 
+    
       System.out.println("Podaj pierwszą liczbę:");
+    
       int a= scanner.nextInt();
+     
       System.out.println("Podaj + lub - lub % lub * lub /");
       scanner.nextLine();
       String o= scanner.nextLine(); 
