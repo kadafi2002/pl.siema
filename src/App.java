@@ -1,7 +1,7 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
-public class App {
-    public static void main(String[] args) throws Exception {
+//public class App {
+   // public static void main(String[] args) throws Exception {
      // System.out.println("podaj swoje imię");
       //Scanner scanner = new Scanner (System.in);
      // String firstName = scanner.nextLine();
@@ -49,48 +49,58 @@ public class App {
         
       //scanner.close();
     
-    
-      Scanner scanner = new Scanner(System.in); 
-    
-      System.out.println("Podaj pierwszą liczbę:");
-    
-      int a= scanner.nextInt();
-     
-      System.out.println("Podaj + lub - lub % lub * lub /");
-      scanner.nextLine();
-      String o= scanner.nextLine(); 
-      System.out.println("Podaj drugą liczbe liczbę:");
-       int c= scanner.nextInt();
-  
-
-       switch (o) {
-           case "+": 
-           System.out.println("wynik dodawania " + (a+c));
-           break;
-      
-        
-          case "-":
-          System.out.println("wynik odejmowania " + (a-c));
-          break;
-      
-          
-          case "*": 
-          System.out.println("wynik mnożenia " + (a*c));
-          break;
-      
-         
-          case "/": 
-          System.out.println("wynik dzielenia " + (a/c));
-          break;
-      
-      
-          case "%":
-          System.out.println("wynik reszty z dzielenia " + (a%c));
-          break;
-      }
-scanner.close();
-      
-    
    
+   
+   
+   import java.util.Scanner;
+  
+      
+ public class App {
+  public static void main(String[] args) throws Exception {
+              
+      
+     Scanner Scanner = new Scanner(System.in);
+              
+      boolean t =(true);
+      
+     int liczba = (int)(Math.random() * 100);
+      
+     System.out.println("Zgadnij o jakiej liczbie myślę");  
+     int podejście = 1;
+      
+      
+           while(podejście < 8){
+                
+          System.out.println("To  "+podejście+" próba, podaj liczbę");
+
+           int zgad = Scanner.nextInt();
+
+         if(zgad < liczba){
+
+           System.out.println("Podałeś za małą liczbę");
+
+        }else if(zgad > liczba){
+
+          System.out.println(" Podałeś za dużą liczbę");
+
+       }else if(zgad == liczba){
+          
+           t =true; 
+               
+        break;
+                }
+           podejście++;
+              }
+      
+        if(t){
+          System.out.println("Brawo, zgadłeś");
+        }else{
+          System.out.println("Niestety nie zgadłeś");
+              }
+
+              
+            Scanner.close();
+              
+              
+          } 
       }
-}
