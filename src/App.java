@@ -52,55 +52,61 @@
    
    
    
-   import java.util.Scanner;
+ //  import java.util.Scanner;
   
       
- public class App {
-  public static void main(String[] args) throws Exception {
+ //public class App {
+  //public static void main(String[] args) throws Exception {
               
       
-     Scanner Scanner = new Scanner(System.in);
+    // Scanner Scanner = new Scanner(System.in);
               
-      boolean t =(true);
+     // boolean t =(true);
       
-     int liczba = (int)(Math.random() * 100);
+    // int liczba = (int)(Math.random() * 100);
       
-     System.out.println("Zgadnij o jakiej liczbie myślę");  
-     int podejście = 1;
-      
-      
-           while(podejście < 8){
+   //  System.out.println("Zgadnij o jakiej liczbie myślę");  
+   //  int podejście = 1;
+     // 
+   //   
+     //      while(podejście < 8){
                 
-          System.out.println("To  "+podejście+" próba, podaj liczbę");
+       //   System.out.println("To  "+podejście+" próba, podaj liczbę");
 
-           int zgad = Scanner.nextInt();
+       //    int zgad = Scanner.nextInt();
 
-         if(zgad < liczba){
+       //  if(zgad < liczba){
+//
+       //    System.out.println("Podałeś za małą liczbę");
 
-           System.out.println("Podałeś za małą liczbę");
+       // }else if(zgad > liczba){
 
-        }else if(zgad > liczba){
+         // System.out.println(" Podałeś za dużą liczbę");
 
-          System.out.println(" Podałeś za dużą liczbę");
-
-       }else if(zgad == liczba){
+    //   }else if(zgad == liczba){
           
-           t =true; 
+      //     t =true; 
                
-        break;
-                }
-           podejście++;
-              }
+    //    break;
+        //        }
+       //    podejście++;
+      //        }
       
-        if(t){
-          System.out.println("Brawo, zgadłeś");
-        }else{
-          System.out.println("Niestety nie zgadłeś");
-              }
+     //   if(t){
+     //     System.out.println("Brawo, zgadłeś");
+     //   }else{
+       //   System.out.println("Niestety nie zgadłeś");
+       //     }
 
               
-            Scanner.close();
+          //  Scanner.close();
               
-              
-          } 
-      }
+   import java.util.Scanner;
+   public class App {
+   public static void main(String[] args) throws Exception {
+             
+     myclass myObj = new myclass();
+    System.out.println(myObj.name+"to"myObj.race+",który ma"+myObj.age);
+
+     } 
+ }     
